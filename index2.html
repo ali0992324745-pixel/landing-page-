@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عرض خاص | اطلب الآن</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a7cff, #003f8f);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+      border-radius: 0 0 30px 30px;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 15px 35px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    section {
+      background: white;
+      margin-top: 30px;
+      padding: 40px 25px;
+      border-radius: 25px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.9rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 18px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .price-box {
+      text-align: center;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 1.1rem;
+    }
+
+    .new-price {
+      font-size: 2.3rem;
+      color: #0a7cff;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .time-box {
+      background: #0a7cff;
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      min-width: 70px;
+    }
+
+    .testimonial {
+      background: #f9f9f9;
+      padding: 20px;
+      border-right: 5px solid #0a7cff;
+      border-radius: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>عرض خاص لفترة محدودة 🔥</h1>
+  <p>صفحة بيع احترافية تخلي الزبون يطلب بضغطة زر</p>
+  <a class="btn" href="https://wa.me/249XXXXXXXXX?text=السلام%20عليكم%20داير%20اطلب%20المنتج" target="_blank">
+    📲 اطلب الآن عبر واتساب
+  </a>
+</header>
+
+<section class="container">
+  <h2 class="title">هل بتواجه المشاكل دي؟</h2>
+  <div class="grid">
+    <div class="box">طلبات كثيرة في الخاص</div>
+    <div class="box">الزبون يسأل وما يشتري</div>
+    <div class="box">عرض المنتجات غير مرتب</div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="title">الحل</h2>
+  <div class="grid">
+    <div class="box">عرض واضح للمنتج</div>
+    <div class="box">سعر ومميزات مرتبة</div>
+    <div class="box">زر طلب مباشر واتساب</div>
+    <div class="box">تصميم سريع ومريح</div>
+  </div>
+</section>
+
+<section class="container price-box">
+  <h2 class="title">السعر</h2>
+  <div class="old-price">45,000 جنيه</div>
+  <div class="new-price">35,000 جنيه</div>
+  <p>⏳ العرض ينتهي خلال:</p>
+
+  <div class="countdown">
+    <div class="time-box"><span id="hours">00</span><br>ساعات</div>
+    <div class="time-box"><span id="minutes">00</span><br>دقائق</div>
+    <div class="time-box"><span id="seconds">00</span><br>ثواني</div>
+  </div>
+
+  <br>
+  <a class="btn" href="https://wa.me/249XXXXXXXXX?text=السلام%20عليكم%20داير%20اطلب%20العرض" target="_blank">
+    🚀 احجز الآن
+  </a>
+</section>
+
+<section class="container">
+  
+</section>
+
+<footer>
+  © 2026 – جميع الحقوق محفوظة<br>
+  للتواصل عبر واتساب
+</footer>
+
+<script>
+  // Countdown Timer (3 hours)
+  let time = 3 * 60 * 60;
+
+  setInterval(() => {
+    let h = Math.floor(time / 3600);
+    let m = Math.floor((time % 3600) / 60);
+    let s = time % 60;
+
+    document.getElementById("hours").innerText = String(h).padStart(2, "0");
+    document.getElementById("minutes").innerText = String(m).padStart(2, "0");
+    document.getElementById("seconds").innerText = String(s).padStart(2, "0");
+
+    if (time > 0) time--;
+  }, 1000);
+</script>
+
+</body>
+  </html>
