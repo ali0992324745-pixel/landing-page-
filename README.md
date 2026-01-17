@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة بيع | اطلب الآن</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a7cff, #0056b3);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    section {
+      background: #fff;
+      margin-top: 30px;
+      padding: 40px 25px;
+      border-radius: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #0a7cff;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .badge {
+      background: #ff3d3d;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+
+    .testimonial {
+      background: #f9f9f9;
+      border-right: 5px solid #0a7cff;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>خلّي زبائنك يطلبوا بضغطة زر</h1>
+      <p>
+        صفحة بيع سريعة تعرض منتجك باحتراف  
+        وتحول المشاهد لمشتري بدون موقع معقد
+      </p>
+      <a class="btn" href="https://wa.me/249XXXXXXXXX" target="_blank">
+        📲 اطلب الآن عبر واتساب
+      </a>
+    </div>
+  </header>
+
+  <!-- PROBLEM / SOLUTION -->
+  <section class="container">
+    <h2 class="section-title">هل بتواجه المشاكل دي؟</h2>
+    <div class="grid">
+      <div class="box">الطلبات كلها في الخاص ومتعبة</div>
+      <div class="box">الزبون يسأل كتير وما يكمل</div>
+      <div class="box">الصور والأسعار ما واضحة</div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="container">
+    <h2 class="section-title">شنو البتقدمو الصفحة؟</h2>
+    <div class="grid">
+      <div class="box">✔ عرض واضح للمنتج</div>
+      <div class="box">✔ سعر ومميزات مرتبة</div>
+      <div class="box">✔ زر طلب مباشر واتساب</div>
+      <div class="box">✔ تصميم سريع ومتجاوب</div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="container" style="text-align:center;">
+    <span class="badge">عرض محدود</span>
+    <h2 class="section-title">السعر</h2>
+    <div class="price">35,000 جنيه</div>
+    <a class="btn" href="https://wa.me/249XXXXXXXXX" target="_blank">
+      🚀 اطلب الآن
+    </a>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container">
+    <h2 class="section-title">آراء العملاء</h2>
+    <div class="grid">
+      <div class="testimonial">
+        ⭐⭐⭐⭐⭐  
+        <p>الخدمة ممتازة والطلب كان سريع.</p>
+        <strong>– أحمد</strong>
+      </div>
+      <div class="testimonial">
+        ⭐⭐⭐⭐⭐  
+        <p>صفحة بسيطة وسهلة خلّت البيع أسرع.</p>
+        <strong>– محمد</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="container" style="text-align:center;">
+    <h2 class="section-title">جاهز تبدأ؟</h2>
+    <p>اضغط الزر وتواصل معنا مباشرة</p>
+    <br>
+    <a class="btn" href="https://wa.me/249XXXXXXXXX" target="_blank">
+      📲 تواصل عبر واتساب
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 – جميع الحقوق محفوظة  
+    <br>
+    للتواصل: واتساب
+  </footer>
+
+</body>
+</html>
